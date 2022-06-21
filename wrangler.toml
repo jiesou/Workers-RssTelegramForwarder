@@ -1,0 +1,22 @@
+name = "rss-telegram-forwarder"
+main = "src/index.js"
+compatibility_date = "2022-06-14"
+node_compat = true
+
+#kv_namespaces = [
+#  { binding = "KV", id = "abcdef0123", preview_id = "abcdef0123" }
+#]
+
+[triggers]
+crons = ["0 * * * *"]
+
+#[vars]
+#RSS_URL = "https://example.com/feed"
+#TELEGRAM_TOKEN = "bot123456:abcdef"
+#TELEGRAM_CHATID = 123456
+
+[build]
+command = "yarn"
+
+[dev]
+port = 8888
